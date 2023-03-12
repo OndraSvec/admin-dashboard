@@ -54,6 +54,37 @@ body {
 
 header {
     background-color: white;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    padding: 1rem;
+}
+
+header .upper-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+header .upper-header .search-bar {
+    background-color: var(--blue-secondary);
+
+    height: 25%;
+    border-radius: 0.5rem;
+}
+
+header .lower-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+header .lower-header .action-buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 1.5rem;
+    justify-self: end;
+    align-items: center;
 }
 
 .main-content {
