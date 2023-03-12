@@ -8,6 +8,8 @@
 :root {
     --blue-primary: #06b6d4;
     --blue-secondary: #ecfeff;
+
+    --responsive--font--icons: clamp(0.6rem, 0.6rem + 2vmin, 1.3rem);
 }
 
 html {
@@ -25,11 +27,20 @@ body {
     grid-template-rows: 1fr 4fr;
 }
 
+.icon {
+    height: var(--responsive--font--icons);
+    width: var(--responsive--font--icons);
+}
+
+.dashboard > .icon {
+    height: calc(2 * var(--responsive--font--icons));
+    width: calc(2 * var(--responsive--font--icons));
+}
 .sidebar {
     background-color: var(--blue-primary);
     color: white;
 
-    font-size: clamp(0.6rem, 0.6rem + 2vmin, 1.3rem);
+    font-size: var(--responsive--font--icons);
     font-weight: 600;
     
     grid-row: 1 / -1;
@@ -41,15 +52,25 @@ body {
     padding: 1rem;
 }
 
-.sidebar .navigation > p,
-.sidebar .branding > p {
-    margin-bottom: 0.25rem;
+.sidebar .one-line-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.5rem;
+    align-items: center;
 }
 
-.sidebar .navigation > p > a,
-.sidebar .branding > p > a {
+.sidebar .navigation > div {
+    height: clamp(1rem, 1rem + 2vmin, 2rem);
+}
+
+.sidebar .navigation  p > a,
+.sidebar .branding  p > a {
     text-decoration: none;
     color: white;
+}
+
+.sidebar .icon {
+    fill: white;
 }
 
 header {
