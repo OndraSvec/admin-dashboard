@@ -1,0 +1,41 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-primary: #06b6d4;
+    --blue-secondary: #ecfeff;
+}
+
+html {
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex-grow: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: var(--blue-primary);
+    
+    grid-row: 1 / -1;
+}
+
+header {
+    background-color: white;
+}
+
+.main-content {
+    background-color: var(--blue-secondary);
+}
+
