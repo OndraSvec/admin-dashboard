@@ -55,7 +55,7 @@ body {
 .sidebar .one-line-grid {
     display: grid;
     grid-template-columns: auto 1fr;
-    column-gap: 0.5rem;
+    column-gap: clamp(0.5rem, 0.5rem + 2vmin, 1rem);
     align-items: center;
 }
 
