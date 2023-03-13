@@ -228,6 +228,10 @@ header .lower-header .action-buttons > .action-button {
     gap: 0.25rem;
 }
 
+.main-content .your-projects .cards .card > p {
+    font-size: calc(var(--responsive--font--icons) * 0.7);   
+}
+
 .main-content .your-projects .cards .card > .card-icons {
     justify-self: flex-end;
 
