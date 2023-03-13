@@ -124,7 +124,7 @@ header .header-icon {
 }
 
 header .upper-header .search-bar {
-    background-color: var(--blue-secondary);
+    background-color: var(--blue-primary);
 
     height: clamp(1rem, 1rem + 2vmin, 3rem);
     width: clamp(10rem, 50vw, 40rem);
@@ -133,7 +133,7 @@ header .upper-header .search-bar {
 
 header .upper-header .search-bar > #search-bar {
     background-color: transparent;
-    color: black;
+    color: white;
 
     border: none;
     border-radius: 0.5rem;
