@@ -104,6 +104,17 @@ header .upper-header {
     align-items: center;
 }
 
+header .upper-header .user-info > a,
+header .lower-header .welcome-message > p {
+    text-decoration: none;
+    color: black;
+    font-size: var(--responsive--font--icons);
+}
+
+header .lower-header .welcome-message > .smaller-text {
+    font-size: calc(var(--responsive--font--icons) * 0.8);
+}
+
 header .header-icon {
     fill: black;
 
