@@ -247,6 +247,10 @@ header .lower-header .action-buttons > .action-button {
     width: var(--responsive--font--icons);
 }
 
+.main-content .your-projects .cards .card .card-icons > .card-icon:hover {
+    fill: var(--yellow-primary);
+}
+
 .announcements > .announcements-card {
     background-color: white;
     color: black;
