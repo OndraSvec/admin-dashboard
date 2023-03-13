@@ -163,6 +163,20 @@ header .lower-header .action-buttons {
     align-items: center;
 }
 
+header .lower-header .action-buttons > .action-button {
+    background-color: var(--blue-primary);
+    color: white;
+    font-size: calc(var(--responsive--font--icons) * 0.7);
+    font-weight: bold;
+
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
 .main-content {
     background-color: var(--blue-secondary);
 }
